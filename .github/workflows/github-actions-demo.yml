@@ -6,10 +6,12 @@ jobs:
     name: My first job
     runs-on: ubuntu-latest
     steps:
-      - run: echo "first job"
+      - name: 最初のメッセージ表示
+        run: echo "first job"
   # "my_second_job"というジョブIDでジョブを定義
   my_second_job:
     name: My second job
     runs-on: ubuntu-latest
     steps:
-      - run: echo "second job"
+      - name: 二番目のメッセージ表示
+        run: echo "second job"
